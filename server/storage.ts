@@ -67,27 +67,27 @@ export class MemStorage implements IStorage {
     // Initialize with sample data
     const categories = [
       {
-        name: "Electronics",
-        icon: "fas fa-mobile-alt",
-        description: "Latest gadgets and tech accessories",
+        name: "Beginner Stages",
+        icon: "fas fa-star",
+        description: "Perfect characters for new players",
         color: "primary"
       },
       {
-        name: "Fashion",
-        icon: "fas fa-tshirt",
-        description: "Trendy clothing and accessories",
+        name: "Intermediate Stages",
+        icon: "fas fa-fire-alt",
+        description: "Characters with advanced abilities",
         color: "secondary"
       },
       {
-        name: "Home Goods",
-        icon: "fas fa-home",
-        description: "Quality items for your living space",
+        name: "Legendary Stages",
+        icon: "fas fa-crown",
+        description: "Ultimate power characters for pro players",
         color: "accent"
       },
       {
-        name: "Gifts",
+        name: "Character Bundles",
         icon: "fas fa-gift",
-        description: "Perfect presents for every occasion",
+        description: "Special deals on multiple characters",
         color: "primary"
       }
     ];
@@ -96,64 +96,64 @@ export class MemStorage implements IStorage {
     
     const products = [
       {
-        name: "Premium Wireless Headphones",
-        description: "Experience premium sound quality with our comfortable wireless headphones.",
-        price: 129.99,
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        name: "Stage 1: Haze",
+        description: "Unlock the power of Haze with dual-colored hair and lightning powers. Perfect for beginners.",
+        price: 19.99,
+        image: "/attached_assets/image_1747848727752.png",
         rating: 4.5,
         reviewCount: 120,
         categoryId: 1,
-        whatsappMessage: "I'm interested in the Premium Wireless Headphones"
+        whatsappMessage: "I want to buy Stage 1: Haze character"
       },
       {
-        name: "Smart Watch Pro",
-        description: "Track your fitness goals and stay connected with this premium smartwatch.",
-        price: 199.99,
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        name: "Stage 2: Hexo",
+        description: "Master the dark arts with Hexo. Features multiple blades and advanced combat techniques.",
+        price: 29.99,
+        image: "/attached_assets/image_1747848814603.png",
         rating: 5.0,
         reviewCount: 89,
         categoryId: 1,
-        whatsappMessage: "I'm interested in the Smart Watch Pro"
+        whatsappMessage: "I want to buy Stage 2: Hexo character"
       },
       {
-        name: "Premium Leather Wallet",
-        description: "Handcrafted genuine leather wallet with RFID protection technology.",
-        price: 49.99,
-        image: "https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        rating: 4.0,
-        reviewCount: 56,
-        categoryId: 2,
-        whatsappMessage: "I'm interested in the Premium Leather Wallet"
-      },
-      {
-        name: "Modern Desk Lamp",
-        description: "Stylish desk lamp with adjustable brightness and wireless charging base.",
-        price: 79.99,
-        image: "https://images.unsplash.com/photo-1507764923504-cd90bf7da772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        rating: 3.5,
-        reviewCount: 42,
-        categoryId: 3,
-        whatsappMessage: "I'm interested in the Modern Desk Lamp"
-      },
-      {
-        name: "Ceramic Coffee Mug Set",
-        description: "Set of 4 handcrafted ceramic mugs in minimalist design and pastel colors.",
+        name: "Stage 3: Volta",
+        description: "Harness raw power with Volta. Features a unique mask and devastating close-combat abilities.",
         price: 39.99,
-        image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        rating: 4.5,
-        reviewCount: 67,
-        categoryId: 3,
-        whatsappMessage: "I'm interested in the Ceramic Coffee Mug Set"
+        image: "/attached_assets/image_1747848882152.png",
+        rating: 4.8,
+        reviewCount: 76,
+        categoryId: 2,
+        whatsappMessage: "I want to buy Stage 3: Volta character"
       },
       {
-        name: "Travel Backpack Pro",
-        description: "Water-resistant backpack with multiple compartments and laptop sleeve.",
-        price: 89.99,
-        image: "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        rating: 4.0,
+        name: "Stage 4: Dual Warriors",
+        description: "Command both pink and blue warriors with complementary fighting styles and weapon sets.",
+        price: 49.99,
+        image: "/attached_assets/image_1747848951098.png",
+        rating: 4.9,
+        reviewCount: 112,
+        categoryId: 3,
+        whatsappMessage: "I want to buy Stage 4: Dual Warriors character pack"
+      },
+      {
+        name: "Stage 5: Ultimate Power",
+        description: "Reach the pinnacle of power with this legendary character. Includes exclusive weapon skins and abilities.",
+        price: 59.99,
+        image: "/attached_assets/image_1747849315613.png",
+        rating: 5.0,
         reviewCount: 95,
+        categoryId: 3,
+        whatsappMessage: "I want to buy Stage 5: Ultimate Power character"
+      },
+      {
+        name: "Complete Character Bundle",
+        description: "Unlock all five character stages at a discounted price. The ultimate collection for serious players.",
+        price: 149.99,
+        image: "/attached_assets/image_1747848727752.png",
+        rating: 4.9,
+        reviewCount: 65,
         categoryId: 2,
-        whatsappMessage: "I'm interested in the Travel Backpack Pro"
+        whatsappMessage: "I want to buy the Complete Character Bundle with all 5 stages"
       }
     ];
     

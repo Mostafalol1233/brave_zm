@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">BraveShop</h3>
+            <h3 className="text-xl font-bold mb-4">GameHeroes</h3>
             <p className="text-gray-400 mb-4">
-              Your destination for premium lifestyle products. We offer a curated selection of quality items to enhance your everyday life.
+              Your ultimate source for premium game characters. We offer a curated selection of powerful heroes to enhance your gaming experience.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-all">
@@ -22,7 +22,7 @@ const Footer = () => {
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-all">
-                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-discord"></i>
               </a>
             </div>
           </div>

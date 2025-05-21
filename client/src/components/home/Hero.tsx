@@ -12,8 +12,8 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Premium Products for Your Lifestyle</h1>
-            <p className="text-lg mb-6">Discover our curated collection of high-quality products that enhance your everyday experience.</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Legendary Gaming Characters</h1>
+            <p className="text-lg mb-6">Discover our exclusive collection of powerful game characters that will take your gaming experience to the next level.</p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <Link href="/products" className="bg-white text-primary font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-all flex items-center justify-center">
                 <span>Browse Products</span>

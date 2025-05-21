@@ -31,7 +31,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   const handleWhatsAppShare = () => {
     const phoneNumber = "1234567890"; // Replace with your actual WhatsApp number
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const encodedMessage = encodeURIComponent(`${whatsappMessage} ($${price.toFixed(2)})`);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
