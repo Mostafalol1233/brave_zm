@@ -5,4 +5,11 @@ import { Analytics } from "@vercel/analytics/react";
 // Make the logo available throughout the app
 import "./assets/bravezm_logo.png";
 
-createRoot(document.getElementById("root")!).render(<App />);
+import { Analytics } from "@vercel/analytics/react";
+
+createRoot(document.getElementById("root")!).render(
+  <>
+    <App />
+    <Analytics />
+  </>
+);
