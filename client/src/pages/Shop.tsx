@@ -27,19 +27,27 @@ export default function Shop() {
       <div className="w-full bg-black/80 border-b border-red-600 p-4 fixed top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <img 
-              src={bravezm_logo} 
-              alt="BRAVEZM Logo" 
-              className="w-10 h-10 object-contain mr-3"
-            />
+            <Link href="/">
+              <img 
+                src={bravezm_logo} 
+                alt="BRAVEZM Logo" 
+                className="w-10 h-10 object-contain mr-3 cursor-pointer"
+              />
+            </Link>
             <h1 className="text-white text-xl font-bold">BRAVEZM Gaming</h1>
           </div>
           <div className="flex space-x-4">
+            <Link href="/" className="text-white hover:text-red-400 transition">
+              Home
+            </Link>
             <Link href="/connect" className="text-white hover:text-red-400 transition">
               Connect
             </Link>
             <Link href="/shop" className="text-red-500 font-bold">
               Shop
+            </Link>
+            <Link href="/about" className="text-white hover:text-red-400 transition">
+              About Us
             </Link>
           </div>
         </div>
@@ -108,7 +116,7 @@ export default function Shop() {
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
             >
-              Developed by Mostafa
+              Designed with ❤️ by Mostafa
             </a>
           </div>
         </div>

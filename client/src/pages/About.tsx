@@ -1,9 +1,32 @@
-import { SocialLinksGrid } from "@/components/SocialLinks";
-import { socialLinks } from "@/lib/constants";
 import { Link } from "wouter";
 import bravezm_logo from "@/assets/bravezm_logo.png";
 
-export default function Connect() {
+interface TeamMemberProps {
+  name: string;
+  nickname: string;
+  link: string;
+  role: string;
+}
+
+function TeamMember({ name, nickname, link, role }: TeamMemberProps) {
+  return (
+    <div className="bg-black/60 border-2 border-red-600 rounded-lg p-4 text-center">
+      <h3 className="text-white text-xl font-bold mb-1">{nickname}</h3>
+      <p className="text-gray-300 mb-2">{name}</p>
+      <p className="text-gray-400 mb-3">{role}</p>
+      <a 
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md transition"
+      >
+        View Profile
+      </a>
+    </div>
+  );
+}
+
+export default function About() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
       {/* Background with logo pattern */}
@@ -33,13 +56,13 @@ export default function Connect() {
             <Link href="/" className="text-white hover:text-red-400 transition">
               Home
             </Link>
-            <Link href="/connect" className="text-red-500 font-bold">
+            <Link href="/connect" className="text-white hover:text-red-400 transition">
               Connect
             </Link>
             <Link href="/shop" className="text-white hover:text-red-400 transition">
               Shop
             </Link>
-            <Link href="/about" className="text-white hover:text-red-400 transition">
+            <Link href="/about" className="text-red-500 font-bold">
               About Us
             </Link>
           </div>
@@ -48,26 +71,31 @@ export default function Connect() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-24 z-10">
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-lg mx-auto">
-          {/* Logo Centered */}
-          <div className="mb-6 flex flex-col items-center">
-            <img 
-              src={bravezm_logo} 
-              alt="BRAVEZM Logo" 
-              className="w-32 h-32 object-contain mb-4 drop-shadow-2xl"
-            />
-            <h1 className="text-white text-2xl font-bold mb-2">Connect With Us</h1>
-            <p className="text-gray-300 text-center mb-6">Follow us on social media and join our gaming community</p>
+        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-4xl mx-auto">
+          <div className="mb-8 text-center">
+            <h1 className="text-white text-3xl font-bold mb-2">Our Team</h1>
+            <p className="text-gray-300 mb-6">Meet the awesome people behind BRAVEZM Gaming</p>
           </div>
           
-          {/* Social Media Links */}
-          <div className="max-w-md w-full mx-auto">
-            <SocialLinksGrid 
-              facebookUrl={socialLinks.facebook}
-              youtubeUrl={socialLinks.youtube}
-              whatsappUrl={socialLinks.whatsapp}
-              whatsappChannelUrl={socialLinks.whatsappChannel}
-              discordUrl={socialLinks.discord}
+          {/* Team Members */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <TeamMember 
+              name="Abdelrahman Gharib" 
+              nickname="00-00" 
+              link="https://crossfire.z8games.com/profile/27850491"
+              role="Character Designer"
+            />
+            <TeamMember 
+              name="Karim" 
+              nickname="KMO" 
+              link="https://crossfire.z8games.com/profile/26826798"
+              role="Game Developer"
+            />
+            <TeamMember 
+              name="Bemora" 
+              nickname=".-LoL-." 
+              link="https://bemora.vercel.app/"
+              role="Web Developer"
             />
           </div>
           

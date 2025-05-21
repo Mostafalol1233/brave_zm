@@ -36,6 +36,9 @@ export default function Home() {
             <Link href="/connect" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-bold py-4 px-6 rounded-lg transition duration-300">
               Connect With Us
             </Link>
+            <Link href="/about" className="inline-block bg-green-600 hover:bg-green-700 text-white text-lg font-bold py-4 px-6 rounded-lg transition duration-300">
+              About Our Team
+            </Link>
           </div>
           
           {/* Footer */}
@@ -47,7 +50,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
             >
-              Developed by Mostafa
+              Designed with ❤️ by Mostafa
             </a>
           </div>
         </div>
