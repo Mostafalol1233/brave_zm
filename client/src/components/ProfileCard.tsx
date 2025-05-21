@@ -8,6 +8,8 @@ import hazeImage from "@/assets/image_1747848727752.png";
 import hexoImage from "@/assets/image_1747848814603.png";
 import voltaImage from "@/assets/image_1747848882152.png";
 import dualWarriorsImage from "@/assets/image_1747848951098.png";
+import sandDragonImage from "@/assets/image_1747850487073.png";
+import mintacoreImage from "@/assets/image_1747850550234.png";
 
 export function ProfileCard() {
   return (
@@ -65,6 +67,20 @@ export function ProfileCard() {
               imageUrl={dualWarriorsImage}
               linkText="Buy Now"
               linkUrl="https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%204%3A%20Dual%20Warriors%20character%20pack"
+            />
+            <ContentCard
+              title="Stage 5: Sand Dragon"
+              description="Control the ancient Sand Dragon with powerful desert magic and sand manipulation."
+              imageUrl={sandDragonImage}
+              linkText="Buy Now"
+              linkUrl="https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%205%3A%20Sand%20Dragon%20character"
+            />
+            <ContentCard
+              title="Stage 6: Mintacore"
+              description="Master the final stage with Mintacore's legendary weapons and fire-based abilities."
+              imageUrl={mintacoreImage}
+              linkText="Buy Now"
+              linkUrl="https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%206%3A%20Mintacore%20character"
             />
           </div>
           
