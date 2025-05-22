@@ -14,6 +14,27 @@ import mintacoreImage from "@/assets/image_1747850550234.png";
 export function ProfileCard() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+      {/* Developer credit with phone link */}
+      <div className="absolute bottom-4 left-4 text-white/50 text-sm">
+        <a href="tel:01500302461" className="hover:text-white/80 transition-colors">
+          Designed with ❤️ by Mostafa
+        </a>
+      </div>
+      
+      {/* IGN Profile link with conditional behavior */}
+      <div className="absolute bottom-4 right-4 text-white/50 text-sm">
+        <a 
+          href={window.location.pathname === '/view-profile' 
+            ? 'https://crossfire.z8games.com/profile/27723055/'
+            : 'https://bemora.site/lool'} 
+          className="hover:text-white/80 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          IGN: lool
+        </a>
+      </div>
+
       {/* Background with logo pattern */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" 
         style={{
