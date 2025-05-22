@@ -143,7 +143,7 @@ export default function AboutNew() {
           >
             <p className="text-gray-400 text-sm">© {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.</p>
             <motion.a 
-              href="https://wa.me/201156522916?text=My%20rating%20=%20⭐⭐⭐⭐⭐" 
+              href="https://wa.me/201500302461?text=My%20rating%20=%20⭐⭐⭐⭐⭐" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
