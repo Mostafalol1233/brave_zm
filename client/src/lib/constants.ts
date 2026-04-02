@@ -7,7 +7,7 @@ export const socialLinks = {
 };
 
 export const branding = {
-  clanImageUrl: "https://ibb.co/FkT1m2nw"
+  clanImageUrl: "https://image2url.com/r2/default/images/1775162196379-e150dcf6-1179-4a03-9775-e9ed7832d196.png"
 };
 
 export const contactInfo = {
@@ -52,7 +52,7 @@ export const contentCards = [
     id: 5,
     title: "Stage 5: Ultimate Power",
     description: "Reach the pinnacle of power with this legendary character. Includes exclusive weapon skins and abilities.",
-    imageUrl: "https://ibb.co/FkT1m2nw",
+    imageUrl: "https://image2url.com/r2/default/images/1775162196379-e150dcf6-1179-4a03-9775-e9ed7832d196.png",
     linkText: "Purchase Now",
     linkUrl: "https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%205%3A%20Ultimate%20Power%20character"
   }

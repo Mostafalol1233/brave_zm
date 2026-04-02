@@ -110,6 +110,21 @@ export default function Home() {
                 About Our Team
               </Link>
             </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.4, duration: 0.5 }}
+            >
+              <Link
+                href="/giveaway"
+                className="inline-block w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white text-lg font-bold py-4 px-6 rounded-lg transition duration-300"
+              >
+                Monthly Giveaway 🚀
+              </Link>
+            </motion.div>
           </div>
 
           <motion.div

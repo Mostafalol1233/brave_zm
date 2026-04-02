@@ -26,6 +26,7 @@ interface SocialLinksGridProps {
   youtubeUrl: string;
   whatsappUrl: string;
   whatsappChannelUrl: string;
+  crossfireWhatsappUrl?: string;
   discordUrl: string;
 }
 
@@ -34,6 +35,7 @@ export function SocialLinksGrid({
   youtubeUrl, 
   whatsappUrl, 
   whatsappChannelUrl, 
+  crossfireWhatsappUrl,
   discordUrl 
 }: SocialLinksGridProps) {
   return (
@@ -77,7 +79,7 @@ export function SocialLinksGrid({
       </div>
       
       {/* Larger button at the bottom */}
-      <div className="mt-2">
+      <div className="mt-2 space-y-3">
         <a 
           href={whatsappChannelUrl}
           target="_blank" 
@@ -86,8 +88,20 @@ export function SocialLinksGrid({
                     hover:bg-green-700 transition duration-300 w-full"
         >
           <i className="fab fa-whatsapp mr-2"></i>
-          <span>انضم لقناة الواتساب</span>
+          <span>قناة Zenith WhatsApp</span>
         </a>
+        {crossfireWhatsappUrl && (
+          <a 
+            href={crossfireWhatsappUrl}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon flex items-center justify-center p-3 bg-emerald-700 text-white rounded-lg 
+                      hover:bg-emerald-800 transition duration-300 w-full"
+          >
+            <i className="fab fa-whatsapp mr-2"></i>
+            <span>قناة CrossFire Wiki</span>
+          </a>
+        )}
       </div>
     </div>
   );

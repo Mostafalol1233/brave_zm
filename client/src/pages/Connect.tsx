@@ -68,6 +68,7 @@ export default function Connect() {
               youtubeUrl={socialLinks.youtube}
               whatsappUrl={socialLinks.whatsapp}
               whatsappChannelUrl={socialLinks.whatsappChannel}
+              crossfireWhatsappUrl="https://whatsapp.com/channel/0029Vb6jrI44yltQQfvkg41o"
               discordUrl={socialLinks.discord}
             />
           </div>
