@@ -1,6 +1,6 @@
 import { SocialLinksGrid } from "./SocialLinks";
-import { socialLinks, contentCards } from "@/lib/constants";
-import bravezm_logo from "@/assets/bravezm_logo.png";
+import { socialLinks } from "@/lib/constants";
+import bravezm_logo from "@/assets/zenith_logo.svg";
 import { ContentCard } from "./ContentCard";
 
 // Import the game character images
@@ -17,7 +17,7 @@ export function ProfileCard() {
       {/* Developer credit with phone link */}
       <div className="absolute bottom-4 left-4 text-white/50 text-sm">
         <a href="tel:01500302461" className="hover:text-white/80 transition-colors">
-          Designed with ❤️ by Mostafa
+          Designed with ❤️ by Wiki
         </a>
       </div>
       
@@ -25,13 +25,13 @@ export function ProfileCard() {
       <div className="absolute bottom-4 right-4 text-white/50 text-sm">
         <a 
           href={window.location.pathname === '/view-profile' 
-            ? 'https://crossfire.z8games.com/profile/27723055/'
-            : 'https://bemora.site/lool'} 
+            ? 'https://crossfire.wiki'
+            : 'https://crossfire.wiki'} 
           className="hover:text-white/80 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
-          IGN: lool
+          CF WIKI
         </a>
       </div>
 
@@ -52,7 +52,7 @@ export function ProfileCard() {
           <div className="mb-6 flex flex-col items-center">
             <img 
               src={bravezm_logo} 
-              alt="BRAVEZM Logo" 
+              alt="Zenith Logo" 
               className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
             />
             <h1 className="text-white text-2xl font-bold mb-2">Gaming Characters Shop</h1>
@@ -119,7 +119,7 @@ export function ProfileCard() {
           
           {/* Footer */}
           <div className="mt-12 text-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Zenith Gaming. All rights reserved.</p>
           </div>
         </div>
       </div>

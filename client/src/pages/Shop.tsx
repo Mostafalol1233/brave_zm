@@ -8,7 +8,7 @@ import voltaImage from "@/assets/image_1747848882152.png";
 import dualWarriorsImage from "@/assets/image_1747848951098.png";
 import sandDragonImage from "@/assets/image_1747850487073.png";
 import mintacoreImage from "@/assets/image_1747850550234.png";
-import bravezm_logo from "@/assets/bravezm_logo.png";
+import bravezm_logo from "@/assets/zenith_logo.svg";
 
 export default function Shop() {
   return (
@@ -30,11 +30,11 @@ export default function Shop() {
             <Link href="/">
               <img 
                 src={bravezm_logo} 
-                alt="BRAVEZM Logo" 
+                alt="Zenith Logo" 
                 className="w-10 h-10 object-contain mr-3 cursor-pointer"
               />
             </Link>
-            <h1 className="text-white text-xl font-bold">BRAVEZM Gaming</h1>
+            <h1 className="text-white text-xl font-bold">Zenith Gaming</h1>
           </div>
           <div className="flex space-x-4">
             <Link href="/" className="text-white hover:text-red-400 transition">
@@ -109,14 +109,14 @@ export default function Shop() {
           
           {/* Footer */}
           <div className="mt-12 text-center border-t border-gray-800 pt-6">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Zenith Gaming. All rights reserved.</p>
             <a 
-              href="https://wa.me/201500302461?text=My%20rating%20=%20⭐⭐⭐⭐⭐" 
+              href="https://linktr.ee/Mustafa_Bemo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
             >
-              Designed with ❤️ by Mostafa
+              Designed with ❤️ by Wiki
             </a>
           </div>
         </div>

@@ -1,9 +1,9 @@
 export const socialLinks = {
-  facebook: "https://www.facebook.com/@bravezmclan/?_rdr",
-  youtube: "https://www.youtube.com/@BRAVEZM",
-  whatsapp: "https://wa.me/201156522916",
-  whatsappChannel: "https://whatsapp.com/channel/0029VayVFHyKGGGKhopkK0G",
-  discord: "https://discord.gg/8esNSfcTXV"
+  facebook: "https://www.facebook.com/share/1CEjVyeU7z/",
+  youtube: "https://youtube.com/@zenith-cfw?si=VQHfqSMFf8NWxNuO",
+  whatsapp: "https://whatsapp.com/channel/0029Vb7PVXZ6buMAzzHExO18",
+  whatsappChannel: "https://whatsapp.com/channel/0029Vb7PVXZ6buMAzzHExO18",
+  discord: "https://discord.gg/MZnurnpvFK"
 };
 
 export const contactInfo = {
@@ -48,7 +48,7 @@ export const contentCards = [
     id: 5,
     title: "Stage 5: Ultimate Power",
     description: "Reach the pinnacle of power with this legendary character. Includes exclusive weapon skins and abilities.",
-    imageUrl: "/src/assets/bravezm_logo.png",
+    imageUrl: "/src/assets/zenith_logo.svg",
     linkText: "Purchase Now",
     linkUrl: "https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%205%3A%20Ultimate%20Power%20character"
   }

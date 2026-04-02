@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/bravezm_logo.png";
+import bravezm_logo from "@/assets/zenith_logo.svg";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
           >
             <motion.img
               src={bravezm_logo}
-              alt="BRAVEZM Logo"
+              alt="Zenith Logo"
               className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
               initial={{ rotate: -5 }}
               animate={{ rotate: 5 }}
@@ -51,7 +51,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              BRAVEZM Gaming
+              Zenith Gaming
             </motion.h1>
             <motion.p
               className="text-gray-300"
@@ -117,17 +117,17 @@ export default function Home() {
             transition={{ delay: 1.5, duration: 0.5 }}
           >
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.
+              © {new Date().getFullYear()} Zenith Gaming. All rights reserved.
             </p>
             <motion.a
-              href="https://wa.me/201500302461?text=My%20rating%20=%20⭐⭐⭐⭐⭐"
+              href="https://linktr.ee/Mustafa_Bemo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
               whileHover={{ scale: 1.1, color: "#ff0000" }}
               whileTap={{ scale: 0.9 }}
             >
-              Designed with ❤️ by Mostafa
+              Designed with ❤️ by Wiki
             </motion.a>
           </motion.div>
         </motion.div>
