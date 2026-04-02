@@ -55,9 +55,9 @@ function TeamMember({
 
 export default function About() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        className="zenith-watermark"
         style={{
           backgroundImage: `url(${bravezm_logo})`,
           backgroundSize: "250px",
@@ -66,7 +66,7 @@ export default function About() {
       />
 
       <motion.div
-        className="w-full bg-black/80 border-b border-red-600 p-4 fixed top-0 z-50"
+        className="zenith-nav p-4"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -122,7 +122,7 @@ export default function About() {
 
       <div className="container mx-auto px-4 py-24 z-10">
         <motion.div
-          className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-4xl mx-auto"
+          className="zenith-panel p-6 max-w-4xl mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}

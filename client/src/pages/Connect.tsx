@@ -1,14 +1,14 @@
 import { SocialLinksGrid } from "@/components/SocialLinks";
-import { socialLinks } from "@/lib/constants";
+import { socialLinks, branding } from "@/lib/constants";
 import { Link } from "wouter";
 import bravezm_logo from "@/assets/zenith_logo.svg";
 
 export default function Connect() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       {/* Background with logo pattern */}
       <div 
-        className="absolute inset-0 opacity-10 pointer-events-none" 
+        className="zenith-watermark" 
         style={{
           backgroundImage: `url(${bravezm_logo})`,
           backgroundSize: '250px',
@@ -17,7 +17,7 @@ export default function Connect() {
       />
 
       {/* Navigation */}
-      <div className="w-full bg-black/80 border-b border-red-600 p-4 fixed top-0 z-50">
+      <div className="zenith-nav p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
@@ -48,14 +48,16 @@ export default function Connect() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-24 z-10">
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-lg mx-auto">
+        <div className="zenith-panel p-6 max-w-lg mx-auto">
           {/* Logo Centered */}
           <div className="mb-6 flex flex-col items-center">
-            <img 
-              src={bravezm_logo} 
-              alt="Zenith Logo" 
-              className="w-32 h-32 object-contain mb-4 drop-shadow-2xl"
-            />
+            <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={bravezm_logo} 
+                alt="Zenith Logo" 
+                className="w-32 h-32 object-contain mb-4 drop-shadow-2xl"
+              />
+            </a>
             <h1 className="text-white text-2xl font-bold mb-2">Connect With Us</h1>
             <p className="text-gray-300 text-center mb-6">Follow us on social media and join our gaming community</p>
           </div>

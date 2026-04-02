@@ -6,6 +6,10 @@ export const socialLinks = {
   discord: "https://discord.gg/MZnurnpvFK"
 };
 
+export const branding = {
+  clanImageUrl: "https://ibb.co/FkT1m2nw"
+};
+
 export const contactInfo = {
   phone: "+20 1156522916",
   whatsapp: "+20 1156522916"

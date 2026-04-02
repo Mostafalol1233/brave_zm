@@ -1,5 +1,5 @@
 import { SocialLinksGrid } from "./SocialLinks";
-import { socialLinks } from "@/lib/constants";
+import { socialLinks, branding } from "@/lib/constants";
 import bravezm_logo from "@/assets/zenith_logo.svg";
 import { ContentCard } from "./ContentCard";
 
@@ -13,7 +13,7 @@ import mintacoreImage from "@/assets/image_1747850550234.png";
 
 export function ProfileCard() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       {/* Developer credit with phone link */}
       <div className="absolute bottom-4 left-4 text-white/50 text-sm">
         <a href="tel:01500302461" className="hover:text-white/80 transition-colors">
@@ -36,7 +36,7 @@ export function ProfileCard() {
       </div>
 
       {/* Background with logo pattern */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none" 
+      <div className="zenith-watermark" 
         style={{
           backgroundImage: `url(${bravezm_logo})`,
           backgroundSize: '250px',
@@ -47,14 +47,16 @@ export function ProfileCard() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 z-10 flex flex-col items-center justify-center">
         {/* Content Box with Red Border */}
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-2xl w-full">
+        <div className="zenith-panel p-6 max-w-2xl w-full">
           {/* Logo Centered */}
           <div className="mb-6 flex flex-col items-center">
-            <img 
-              src={bravezm_logo} 
-              alt="Zenith Logo" 
-              className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
-            />
+            <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={bravezm_logo} 
+                alt="Zenith Logo" 
+                className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
+              />
+            </a>
             <h1 className="text-white text-2xl font-bold mb-2">Gaming Characters Shop</h1>
             <p className="text-gray-300 text-center">Get exclusive access to powerful game characters</p>
           </div>

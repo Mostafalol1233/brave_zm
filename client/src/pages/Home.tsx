@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import bravezm_logo from "@/assets/zenith_logo.svg";
 import { motion } from "framer-motion";
+import { branding } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        className="zenith-watermark"
         style={{
           backgroundImage: `url(${bravezm_logo})`,
           backgroundSize: "250px",
@@ -16,7 +17,7 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-12 z-10 flex flex-col items-center justify-center">
         <motion.div
-          className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-8 max-w-lg w-full text-center"
+          className="zenith-panel p-8 max-w-lg w-full text-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -32,19 +33,21 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <motion.img
-              src={bravezm_logo}
-              alt="Zenith Logo"
-              className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
-              initial={{ rotate: -5 }}
-              animate={{ rotate: 5 }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              }}
-            />
+            <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
+              <motion.img
+                src={bravezm_logo}
+                alt="Zenith Logo"
+                className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
+                initial={{ rotate: -5 }}
+                animate={{ rotate: 5 }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+              />
+            </a>
             <motion.h1
               className="text-white text-3xl font-bold mb-3"
               initial={{ opacity: 0 }}

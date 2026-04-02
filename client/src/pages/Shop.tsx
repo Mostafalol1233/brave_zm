@@ -12,10 +12,10 @@ import bravezm_logo from "@/assets/zenith_logo.svg";
 
 export default function Shop() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       {/* Background with logo pattern */}
       <div 
-        className="absolute inset-0 opacity-10 pointer-events-none" 
+        className="zenith-watermark" 
         style={{
           backgroundImage: `url(${bravezm_logo})`,
           backgroundSize: '250px',
@@ -24,7 +24,7 @@ export default function Shop() {
       />
 
       {/* Navigation */}
-      <div className="w-full bg-black/80 border-b border-red-600 p-4 fixed top-0 z-50">
+      <div className="zenith-nav p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
@@ -55,7 +55,7 @@ export default function Shop() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-24 z-10">
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-6xl mx-auto">
+        <div className="zenith-panel p-6 max-w-6xl mx-auto">
           <div className="mb-8 text-center">
             <h1 className="text-white text-3xl font-bold mb-2">Gaming Characters Shop</h1>
             <p className="text-gray-300">Get exclusive access to powerful game characters</p>
