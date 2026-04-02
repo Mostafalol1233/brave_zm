@@ -1,14 +1,14 @@
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/bravezm_logo.png";
 import { motion } from "framer-motion";
+import { branding } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        className="zenith-watermark"
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: "250px",
           backgroundRepeat: "repeat",
         }}
@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-12 z-10 flex flex-col items-center justify-center">
         <motion.div
-          className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-8 max-w-lg w-full text-center"
+          className="zenith-panel p-8 max-w-lg w-full text-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -32,26 +32,28 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <motion.img
-              src={bravezm_logo}
-              alt="BRAVEZM Logo"
-              className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
-              initial={{ rotate: -5 }}
-              animate={{ rotate: 5 }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              }}
-            />
+            <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
+              <motion.img
+                src={branding.clanImageUrl}
+                alt="Zenith Logo"
+                className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
+                initial={{ rotate: -5 }}
+                animate={{ rotate: 5 }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+              />
+            </a>
             <motion.h1
               className="text-white text-3xl font-bold mb-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              BRAVEZM Gaming
+              Zenith Gaming
             </motion.h1>
             <motion.p
               className="text-gray-300"
@@ -108,6 +110,21 @@ export default function Home() {
                 About Our Team
               </Link>
             </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.4, duration: 0.5 }}
+            >
+              <Link
+                href="/giveaway"
+                className="inline-block w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white text-lg font-bold py-4 px-6 rounded-lg transition duration-300"
+              >
+                Monthly Giveaway 🚀
+              </Link>
+            </motion.div>
           </div>
 
           <motion.div
@@ -117,17 +134,17 @@ export default function Home() {
             transition={{ delay: 1.5, duration: 0.5 }}
           >
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.
+              © {new Date().getFullYear()} Zenith Gaming. All rights reserved.
             </p>
             <motion.a
-              href="https://wa.me/201500302461?text=My%20rating%20=%20⭐⭐⭐⭐⭐"
+              href="https://linktr.ee/Mustafa_Bemo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
               whileHover={{ scale: 1.1, color: "#ff0000" }}
               whileTap={{ scale: 0.9 }}
             >
-              Designed with ❤️ by Mostafa
+              Designed with ❤️ by Wiki
             </motion.a>
           </motion.div>
         </motion.div>

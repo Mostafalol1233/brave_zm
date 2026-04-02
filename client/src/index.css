@@ -79,3 +79,27 @@
     @apply p-6;
   }
 }
+
+.zenith-page {
+  @apply min-h-screen w-full flex flex-col items-center justify-center relative text-white;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(220, 38, 38, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(79, 70, 229, 0.18), transparent 40%),
+    linear-gradient(145deg, #05070d 0%, #0b1020 55%, #111827 100%);
+}
+
+.zenith-watermark {
+  @apply absolute inset-0 pointer-events-none opacity-10;
+  background-size: 220px;
+  background-repeat: repeat;
+  filter: saturate(1.2);
+}
+
+.zenith-panel {
+  @apply bg-slate-900/70 border border-red-400/60 rounded-2xl shadow-2xl backdrop-blur-md;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.45), 0 0 24px rgba(239, 68, 68, 0.2);
+}
+
+.zenith-nav {
+  @apply w-full fixed top-0 z-50 backdrop-blur-md bg-slate-950/70 border-b border-red-500/50;
+}

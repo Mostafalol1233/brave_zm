@@ -1,6 +1,6 @@
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/bravezm_logo.png";
 import { motion } from "framer-motion";
+import { branding } from "@/lib/constants";
 
 interface TeamMemberProps {
   name: string;
@@ -13,7 +13,7 @@ interface TeamMemberProps {
 function TeamMember({ name, nickname, link, role, delay }: TeamMemberProps) {
   return (
     <motion.div 
-      className="bg-black/60 border-2 border-red-600 rounded-lg p-4 text-center"
+      className="bg-black/70 backdrop-blur-sm border-2 border-red-500/80 rounded-xl p-5 text-center shadow-lg shadow-red-900/20"
       whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 0, 0, 0.5)" }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -39,18 +39,18 @@ function TeamMember({ name, nickname, link, role, delay }: TeamMemberProps) {
 
 export default function AboutNew() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       <div 
-        className="absolute inset-0 opacity-10 pointer-events-none" 
+        className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
       />
 
       <motion.div 
-        className="w-full bg-black/80 border-b border-red-600 p-4 fixed top-0 z-50"
+        className="zenith-nav p-4"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -62,12 +62,12 @@ export default function AboutNew() {
           >
             <Link href="/">
               <img 
-                src={bravezm_logo} 
-                alt="BRAVEZM Logo" 
+                src={branding.clanImageUrl} 
+                alt="Zenith Logo" 
                 className="w-10 h-10 object-contain mr-3 cursor-pointer"
               />
             </Link>
-            <h1 className="text-white text-xl font-bold">BRAVEZM Gaming</h1>
+            <h1 className="text-white text-xl font-bold">Zenith Gaming</h1>
           </motion.div>
           <div className="flex space-x-4">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -96,7 +96,7 @@ export default function AboutNew() {
 
       <div className="container mx-auto px-4 py-24 z-10">
         <motion.div 
-          className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-4xl mx-auto"
+          className="zenith-panel p-6 max-w-4xl mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -108,28 +108,21 @@ export default function AboutNew() {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             <h1 className="text-white text-3xl font-bold mb-2">Our Team</h1>
-            <p className="text-gray-300 mb-6">Meet the awesome people behind BRAVEZM Gaming</p>
+            <p className="text-gray-300 mb-6">Meet the awesome people behind Zenith Gaming</p>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
             <TeamMember 
               name="Abdelrahman Gharib" 
-              nickname="00-00" 
+              nickname="00~00" 
               link="https://crossfire.z8games.com/profile/27850491"
               role="Character Designer"
               delay={0.2}
             />
             <TeamMember 
-              name="Karim" 
-              nickname="KMO" 
-              link="https://crossfire.z8games.com/profile/26826798"
-              role="Game Developer"
-              delay={0.4}
-            />
-            <TeamMember 
               name="Bemora" 
-              nickname=".-LoL-." 
-              link="https://bemora.vercel.app/"
+              nickname="CF WIKI" 
+              link="https://crossfire.wiki"
               role="Web Developer"
               delay={0.6}
             />
@@ -141,16 +134,16 @@ export default function AboutNew() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Zenith Gaming. All rights reserved.</p>
             <motion.a 
-              href="https://wa.me/201500302461?text=My%20rating%20=%20⭐⭐⭐⭐⭐" 
+              href="https://linktr.ee/Mustafa_Bemo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-red-500 hover:text-red-400 text-sm mt-2 inline-block"
               whileHover={{ scale: 1.1, color: "#ff0000" }}
               whileTap={{ scale: 0.9 }}
             >
-              Designed with ❤️ by Mostafa
+              Designed with ❤️ by Wiki
             </motion.a>
           </motion.div>
         </motion.div>

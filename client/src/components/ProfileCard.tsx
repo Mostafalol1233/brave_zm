@@ -1,6 +1,5 @@
 import { SocialLinksGrid } from "./SocialLinks";
-import { socialLinks, contentCards } from "@/lib/constants";
-import bravezm_logo from "@/assets/bravezm_logo.png";
+import { socialLinks, branding } from "@/lib/constants";
 import { ContentCard } from "./ContentCard";
 
 // Import the game character images
@@ -13,11 +12,11 @@ import mintacoreImage from "@/assets/image_1747850550234.png";
 
 export function ProfileCard() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative bg-black">
+    <div className="zenith-page">
       {/* Developer credit with phone link */}
       <div className="absolute bottom-4 left-4 text-white/50 text-sm">
         <a href="tel:01500302461" className="hover:text-white/80 transition-colors">
-          Designed with ❤️ by Mostafa
+          Designed with ❤️ by Wiki
         </a>
       </div>
       
@@ -25,20 +24,20 @@ export function ProfileCard() {
       <div className="absolute bottom-4 right-4 text-white/50 text-sm">
         <a 
           href={window.location.pathname === '/view-profile' 
-            ? 'https://crossfire.z8games.com/profile/27723055/'
-            : 'https://bemora.site/lool'} 
+            ? 'https://crossfire.wiki'
+            : 'https://crossfire.wiki'} 
           className="hover:text-white/80 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
-          IGN: lool
+          CF WIKI
         </a>
       </div>
 
       {/* Background with logo pattern */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none" 
+      <div className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
@@ -47,14 +46,16 @@ export function ProfileCard() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 z-10 flex flex-col items-center justify-center">
         {/* Content Box with Red Border */}
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 max-w-2xl w-full">
+        <div className="zenith-panel p-6 max-w-2xl w-full">
           {/* Logo Centered */}
           <div className="mb-6 flex flex-col items-center">
-            <img 
-              src={bravezm_logo} 
-              alt="BRAVEZM Logo" 
-              className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
-            />
+            <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={branding.clanImageUrl} 
+                alt="Zenith Logo" 
+                className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
+              />
+            </a>
             <h1 className="text-white text-2xl font-bold mb-2">Gaming Characters Shop</h1>
             <p className="text-gray-300 text-center">Get exclusive access to powerful game characters</p>
           </div>
@@ -113,13 +114,14 @@ export function ProfileCard() {
               youtubeUrl={socialLinks.youtube}
               whatsappUrl={socialLinks.whatsapp}
               whatsappChannelUrl={socialLinks.whatsappChannel}
+              crossfireWhatsappUrl="https://whatsapp.com/channel/0029Vb6jrI44yltQQfvkg41o"
               discordUrl={socialLinks.discord}
             />
           </div>
           
           {/* Footer */}
           <div className="mt-12 text-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} BRAVEZM Gaming. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Zenith Gaming. All rights reserved.</p>
           </div>
         </div>
       </div>
