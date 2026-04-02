@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/zenith_logo.svg";
 import { motion } from "framer-motion";
 import { branding } from "@/lib/constants";
 
@@ -9,7 +8,7 @@ export default function Home() {
       <div
         className="zenith-watermark"
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: "250px",
           backgroundRepeat: "repeat",
         }}
@@ -35,7 +34,7 @@ export default function Home() {
           >
             <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
               <motion.img
-                src={bravezm_logo}
+                src={branding.clanImageUrl}
                 alt="Zenith Logo"
                 className="w-40 h-40 object-contain mb-6 drop-shadow-2xl"
                 initial={{ rotate: -5 }}

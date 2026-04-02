@@ -1,7 +1,6 @@
 import { SocialLinksGrid } from "@/components/SocialLinks";
 import { socialLinks, branding } from "@/lib/constants";
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/zenith_logo.svg";
 
 export default function Connect() {
   return (
@@ -10,7 +9,7 @@ export default function Connect() {
       <div 
         className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
@@ -22,7 +21,7 @@ export default function Connect() {
           <div className="flex items-center">
             <Link href="/">
               <img 
-                src={bravezm_logo} 
+                src={branding.clanImageUrl} 
                 alt="Zenith Logo" 
                 className="w-10 h-10 object-contain mr-3 cursor-pointer"
               />
@@ -53,7 +52,7 @@ export default function Connect() {
           <div className="mb-6 flex flex-col items-center">
             <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
               <img 
-                src={bravezm_logo} 
+                src={branding.clanImageUrl} 
                 alt="Zenith Logo" 
                 className="w-32 h-32 object-contain mb-4 drop-shadow-2xl"
               />

@@ -1,6 +1,5 @@
 import { SocialLinksGrid } from "./SocialLinks";
 import { socialLinks, branding } from "@/lib/constants";
-import bravezm_logo from "@/assets/zenith_logo.svg";
 import { ContentCard } from "./ContentCard";
 
 // Import the game character images
@@ -38,7 +37,7 @@ export function ProfileCard() {
       {/* Background with logo pattern */}
       <div className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
@@ -52,7 +51,7 @@ export function ProfileCard() {
           <div className="mb-6 flex flex-col items-center">
             <a href={branding.clanImageUrl} target="_blank" rel="noopener noreferrer">
               <img 
-                src={bravezm_logo} 
+                src={branding.clanImageUrl} 
                 alt="Zenith Logo" 
                 className="w-36 h-36 md:w-44 md:h-44 object-contain mb-4 drop-shadow-2xl"
               />

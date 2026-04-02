@@ -8,7 +8,7 @@ import voltaImage from "@/assets/image_1747848882152.png";
 import dualWarriorsImage from "@/assets/image_1747848951098.png";
 import sandDragonImage from "@/assets/image_1747850487073.png";
 import mintacoreImage from "@/assets/image_1747850550234.png";
-import bravezm_logo from "@/assets/zenith_logo.svg";
+import { branding } from "@/lib/constants";
 
 export default function Shop() {
   return (
@@ -17,7 +17,7 @@ export default function Shop() {
       <div 
         className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
@@ -29,7 +29,7 @@ export default function Shop() {
           <div className="flex items-center">
             <Link href="/">
               <img 
-                src={bravezm_logo} 
+                src={branding.clanImageUrl} 
                 alt="Zenith Logo" 
                 className="w-10 h-10 object-contain mr-3 cursor-pointer"
               />

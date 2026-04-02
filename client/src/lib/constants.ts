@@ -52,7 +52,7 @@ export const contentCards = [
     id: 5,
     title: "Stage 5: Ultimate Power",
     description: "Reach the pinnacle of power with this legendary character. Includes exclusive weapon skins and abilities.",
-    imageUrl: "/src/assets/zenith_logo.svg",
+    imageUrl: "https://ibb.co/FkT1m2nw",
     linkText: "Purchase Now",
     linkUrl: "https://wa.me/201156522916?text=I%20want%20to%20buy%20Stage%205%3A%20Ultimate%20Power%20character"
   }

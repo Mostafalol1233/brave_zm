@@ -1,6 +1,6 @@
 import { Link } from "wouter";
-import bravezm_logo from "@/assets/zenith_logo.svg";
 import { motion } from "framer-motion";
+import { branding } from "@/lib/constants";
 
 interface TeamMemberProps {
   name: string;
@@ -43,7 +43,7 @@ export default function AboutNew() {
       <div 
         className="zenith-watermark" 
         style={{
-          backgroundImage: `url(${bravezm_logo})`,
+          backgroundImage: `url(${branding.clanImageUrl})`,
           backgroundSize: '250px',
           backgroundRepeat: 'repeat',
         }}
@@ -62,7 +62,7 @@ export default function AboutNew() {
           >
             <Link href="/">
               <img 
-                src={bravezm_logo} 
+                src={branding.clanImageUrl} 
                 alt="Zenith Logo" 
                 className="w-10 h-10 object-contain mr-3 cursor-pointer"
               />
